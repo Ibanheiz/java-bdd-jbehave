@@ -3,8 +3,11 @@ package com.ibanheiz.conhecimento;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.inject.Singleton;
+
 import com.ibanheiz.notafiscal.NotaFiscal;
 
+@Singleton
 public class ComposicaoConhecimento {
 
 	List<Conhecimento> listaConhecimento;

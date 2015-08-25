@@ -1,5 +1,7 @@
 package com.ibanheiz.conhecimento.steps;
 
+import static org.junit.Assert.assertEquals;
+
 import java.util.List;
 
 import org.jbehave.core.annotations.BeforeStories;
@@ -7,7 +9,6 @@ import org.jbehave.core.annotations.Given;
 import org.jbehave.core.annotations.Named;
 import org.jbehave.core.annotations.Then;
 import org.jbehave.core.annotations.When;
-import static org.junit.Assert.assertEquals;
 
 import com.ibanheiz.conhecimento.ComposicaoConhecimento;
 import com.ibanheiz.parameters.NotaFiscalMock;
@@ -21,7 +22,7 @@ public class ComposicaoConhecimentoSteps {
 	public void inicializar() {
 		composicaoConhecimento = new ComposicaoConhecimento();
 	}
-
+	
 	@Given("uma nova composição de CT-e")
 	public void inicadaComposicaoCte() {
 		composicaoConhecimento.iniciar();
